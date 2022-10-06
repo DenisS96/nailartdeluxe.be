@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Nail Art Deluxe</title>
+  </head>
+
+  <body>
+    <!--header-->
+
+    <header class="header" id="home">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="img/Naildeluxe.png" alt="Nail Deluxe" class="logo__img"
+        /></a>
+      </div>
+      <div class="navigation">
+        <a href="#nowhere" class="navicon"></a>
+        <div class="toggle">
+          <h1 class="menu">Menu</h1>
+          <h3>Created by Tatjana</h3>
+          <ul class="toggle__menu">
+            <li><a href="#">Over Mij</a></li>
+            <li><a href="#">Prijslijst</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#afspraak">Afspraak maken</a></li>
+          </ul>
+          <ul class="social">
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--end header-->
+
+    <main class="main">
+      <div class="welkom">Welkom bij nail art Deluxe</div>
+
+      <!--voorstelling-->
+      <div class="voorstellen">
+        <p class="voorstellen__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eum
+          obcaecati cupiditate. Eaque culpa praesentium possimus, inventore
+          ratione necessitatibus eveniet unde, libero quae, harum est ipsam quis
+          placeat iure odit! Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Sapiente assumenda at itaque earum sint error eum. Vitae
+          cupiditate consequuntur, amet maxime praesentium, pariatur cumque esse
+          ea, aut dolorem debitis possimus!
+        </p>
+      </div>
+
+      <!--einde voorstelling-->
+      <div class="lijn"></div>
+      <!--Prijslijst-->
+      <div class="afspraak">
+        <h1 id="afspraak">Prijslijst</h1>
+        <div class="info">
+          <p>Een goede prijs voor een super kwaliteit!</p>
+        </div>
+
+        <div id="myID" class="prijslijst  hide">
+          <div class="prijslijst__prijzen">
+            <ol class="prijslijst__list">
+              <li class="prijslijst__list-item">
+                Nieuwe set gelnagels zonder verlenging _ _ _ _ _ _ €30
+              </li>
+              <li class="prijslijst__list-item">
+                Nieuwe set gelnagels met verlenging _ _ _ _ _ _ _ _€35
+              </li>
+              <li class="prijslijst__list-item">
+                Babyboom _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ €40
+              </li>
+              <li class="prijslijst__list-item">
+                Bijwerking _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ €25
+              </li>
+              <li class="prijslijst__list-item">
+                Nail art per nagel<span>*</span> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                €1
+              </li>
+              <li class="prijslijst__list-item">
+                Gelnagels verwijderen _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ €15
+              </li>
+              <li class="prijslijst__list-item">
+                gewoon lakken _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ €5
+              </li>
+              <li class="prijslijst__list-item">
+                Manicure _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ €10
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!--einde prijslijst-->
+
+        <div class="lijn"></div>
+
+        <!--Afspraak maken-->
+        <div class="afspraak">
+          <h1 >Afspraak maken</h1>
+          <div class="info">
+            <p>Wij verzorgen jou nagels met veel <i class="fa fa-heart"></i></p>
+          </div>
+
+          <!---->
+        <!--  <form>
+            <h1>Boek hier vandaag jou afspraak :</h1>
+
+            <div class="contentform">
+              <div id="sendmessage">
+                Your message has been sent successfully. Thank you.
+              </div>
+
+              <div class="leftcontact">
+                <div class="form-group">
+                  <p>Naam<span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-male"></i></span>
+                  <input
+                    type="text"
+                    name="nom"
+                    id="nom"
+                    data-rule="required"
+                    data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."
+                  />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Voornaam <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-user"></i></span>
+                  <input
+                    type="text"
+                    name="prenom"
+                    id="prenom"
+                    data-rule="required"
+                    data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."
+                  />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>E-mail <span>*</span></p>
+                  <span class="icon-case"
+                    ><i class="fa fa-envelope-o"></i
+                  ></span>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    data-rule="email"
+                    data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."
+                  />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Postcode</p>
+                  <span class="icon-case"
+                    ><i class="fa fa-map-marker"></i
+                  ></span>
+
+                  <input
+                    type="date"
+                    name="datum"
+                    id="datum"
+                    class="form-control"
+                    placeholder="Enter Date"
+                  />
+                  <div class="validation"></div>
+                </div>
+              </div>
+
+              <div class="rightcontact">
+                <div class="form-group">
+                  <p>Stad</p>
+                  <span class="icon-case"
+                    ><i class="fa fa-building-o"></i
+                  ></span>
+                  <input type="text" name="ville" id="ville" />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Gsm/Telefoon <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-phone"></i></span>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    data-rule="maxlen:10"
+                    data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"
+                  />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Datum <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-comment-o"></i></span>
+                  <input
+                    type="text"
+                    name="sujet"
+                    id="sujet"
+                    data-rule="required"
+                    data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."
+                  />
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <p>Wat moet er gebeuren? <span>*</span></p>
+                  <span class="icon-case"
+                    ><i class="fa fa-comments-o"></i
+                  ></span>
+                  <textarea
+                    name="message"
+                    rows="14"
+                    data-rule="required"
+                    data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."
+                  ></textarea>
+                  <div class="validation"></div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="bouton-contact">Verzenden</button>
+          </form>
+        </div>
+      </div>-->
+      <div id="container">
+        <!--This is a division tag for body container-->
+        <div id="body_header">
+          <!--This is a division tag for body header-->
+          <br><br>
+          <p>Maak hier makkelijk een afspraak</p>
+    
+        </div>
+        <form id="afspraak" action="index.html" method="post">
+          <fieldset>
+            <legend><span class="number">1</span>Uw gegevens</legend>
+            <label for="name">Naam*:</label>
+            <input type="text" id="name" name="user_name" placeholder="Volledige naam" required pattern="[a-zA-Z0-9]+">
+    
+            <label for="mail">Email*:</label>
+            <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
+    
+            <label for="tel">Gsm/telefoonnummer:</label>
+            <input type="tel" id="tel" placeholder="+32" name="user_num">
+    
+          
+    
+    
+          <fieldset>
+            <legend><span class="number">2</span>Afspraak gegevens</legend>
+            <label for="appointment_for">Afspraak voor?*:</label>
+            <select id="appointment_for" name="appointment_for" required>
+              <option value="nieuweset">Nieuwe set gelnagels zonder verlenging</option>
+              <option value="meeting">Nieuwe set gelnagels met verlenging</option>
+              <option value="Business">Babyboom</option>
+              <option value="lunch">Bijwerking</option>
+              <option value="skype">Nail art per nagel</option>
+              <option value="movie">Gelnagels verwijderen</option>
+              <option value="couple_date">gewoon lakken</option>
+              <option value="Manicure">Manicure</option>
+            </select>
+            <label for="appointment_description">Wat kunnen we voor u betekenen?:</label>
+            <textarea id="appointment_description" name="appointment_description" placeholder="Extra info"></textarea>
+            <label for="date">Datum*:</label>
+            <input type="date" name="date" value="" required></input>
+            <br>
+            <label for="time">Tijdstip*:</label>
+            <input type="time" name="time" value="" required></input>
+            <br>
+            
+          <button type="submit">Afspraak maken</button>
+        </form>
+      </div>
+      <!--end form-->
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <p class="footer__text">&copy;Thegoodsiteoflife</p>
+    </footer>
+
+    <!--end footer-->
+  </body>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+  <script src="script.js"></script>
+</html>
