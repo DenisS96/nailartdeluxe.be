@@ -45,13 +45,16 @@ h3 {
 .navicon {
   width: 100%;
   background: transparent;
-  margin: 80px auto 40px 83%;
+  margin: 80px auto 40px 90%;
   position: fixed;
   height: 30px;
   width: 50px;
   display: block;
   z-index: 99;
   transition: linear 0.5s all; }
+  @media only screen and (max-width: 37.5em) {
+    .navicon {
+      margin: 80px auto 40px 80%; } }
   .navicon:before, .navicon:after {
     background: #db7bf0;
     backface-visibility: hidden;
@@ -85,11 +88,15 @@ h3 {
   width: 20%;
   background-color: rgba(187, 87, 184, 0.605);
   padding: 15px;
-  margin-left: 60%;
+  margin-left: 65%;
   opacity: 0;
   transition: ease-in 0.5s all;
   transform: translateY(-200%);
   min-width: 320px; }
+  @media only screen and (max-width: 37.5em) {
+    .toggle {
+      margin-left: 0;
+      width: 100%; } }
   .toggle--active {
     display: block;
     opacity: 1;
@@ -112,6 +119,9 @@ h3 {
         transition: linear 0.5s all;
         font-weight: 500;
         padding: 5px 0; }
+        @media only screen and (max-width: 37.5em) {
+          .toggle__menu li a {
+            color: #fff; } }
         .toggle__menu li a span {
           text-transform: lowercase; }
         .toggle__menu li a:hover {
@@ -136,12 +146,17 @@ h3 {
       color: #000;
       font-size: 25px;
       transition: linear 0.5s all; }
+      @media only screen and (max-width: 37.5em) {
+        .social li a {
+          color: #fff; } }
       .social li a:hover {
         color: #fff;
         transition: linear 0.5s all; }
 
-.logo__img {
-  width: 10rem; }
+.logo {
+  position: absolute; }
+  .logo__img {
+    width: 10rem; }
 
 .info p {
   text-align: center;
