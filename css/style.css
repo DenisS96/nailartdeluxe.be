@@ -478,6 +478,9 @@ form {
       transition: all 0.5s ease-in; }
       .prijslijst__list-item:hover {
         font-size: large; }
+        @media only screen and (max-width: 37.5em) {
+          .prijslijst__list-item:hover {
+            font-size: 0.6rem; } }
 
 .hide {
   opacity: 0; }
