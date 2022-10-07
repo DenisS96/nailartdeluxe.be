@@ -63,10 +63,16 @@ h3 {
     left: 0;
     transition: 0.8s ease;
     width: 45px; }
+    @media only screen and (max-width: 37.5em) {
+      .navicon:before, .navicon:after {
+        background: #a155b3; } }
   .navicon:before {
     box-shadow: #d158d3 0 14px 0 0;
     position: absolute;
     top: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .navicon:before {
+        background: #a155b3; } }
   .navicon:after {
     position: absolute;
     top: 28px; }
