@@ -52,6 +52,9 @@ h3 {
   display: block;
   z-index: 99;
   transition: linear 0.5s all; }
+  @media only screen and (max-width: 56.25em) {
+    .navicon {
+      margin: 80px auto 40px 92%; } }
   @media only screen and (max-width: 37.5em) {
     .navicon {
       margin: 80px auto 40px 80%; } }
@@ -83,9 +86,21 @@ h3 {
       box-shadow: transparent 0 0 0 0;
       top: 15px;
       transform: rotate(225deg); }
+      @media only screen and (max-width: 37.5em) {
+        .navicon--active:before {
+          background: #fff; } }
+      @media only screen and (max-width: 56.25em) {
+        .navicon--active:before {
+          background: #fff; } }
     .navicon--active:after {
       top: 15px;
       transform: rotate(315deg); }
+      @media only screen and (max-width: 37.5em) {
+        .navicon--active:after {
+          background: #fff; } }
+      @media only screen and (max-width: 56.25em) {
+        .navicon--active:after {
+          background: #fff; } }
 
 .toggle {
   display: block;
@@ -163,6 +178,14 @@ h3 {
   position: absolute; }
   .logo__img {
     width: 10rem; }
+
+.polish {
+  background-image: url(../img/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 10rem; }
 
 .info p {
   text-align: center;
@@ -496,6 +519,23 @@ form {
     margin-top: 2rem;
     padding-left: 20%;
     padding-right: 20%; }
+
+.pictures {
+  text-align: center; }
+  .pictures__image {
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    transition: all 0.2s;
+    outline-offset: 1rem; }
+    .pictures__image--1 {
+      z-index: 15; }
+    .pictures__image:hover {
+      transform: scale(1, 1);
+      outline: 3px solid #aa24c8; }
+  .pictures:hover .pictures__image:not(:hover) {
+    transform: scale(0.95); }
 
 @keyframes animateHeart {
   0% {
