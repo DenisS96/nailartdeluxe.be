@@ -637,6 +637,10 @@ form {
     margin-left: 2rem;
     border: 1px solid black;
     padding: 1.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .adres__gegevens {
+        margin-left: 0;
+        width: 100%; } }
     .adres__gegevens--link {
       color: #000;
       transition: all ease-in 0.5s; }
