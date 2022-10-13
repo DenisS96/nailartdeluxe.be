@@ -100,6 +100,20 @@ h4 {
   color: #aaa;
   margin-bottom: 0; }
 
+.imagelak {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  z-index: -5;
+  margin-top: 5%;
+  margin-left: 45%; }
+  @media only screen and (max-width: 37.5em) {
+    .imagelak {
+      margin-top: 10rem;
+      margin-left: 40%;
+      width: 12rem;
+      height: 12rem; } }
+
 .header {
   display: flex;
   position: absolute; }
@@ -583,8 +597,8 @@ form {
     padding-right: 20%; }
     @media only screen and (max-width: 37.5em) {
       .voorstellen__text {
-        margin-left: none;
-        margin-left: none; } }
+        padding-left: 5%;
+        padding-right: 5%; } }
 
 .pictures {
   text-align: center; }
@@ -639,8 +653,12 @@ form {
     padding: 1.5rem; }
     @media only screen and (max-width: 37.5em) {
       .adres__gegevens {
+        border: none;
         margin-left: 0;
-        width: 100%; } }
+        width: 87%;
+        background-image: linear-gradient(to right, rgba(250, 221, 240, 0.805), rgba(250, 221, 240, 0.805)), url(../img/nagelsLichtRoos.jpeg);
+        background-position: center;
+        background-size: cover; } }
     .adres__gegevens--link {
       color: #000;
       transition: all ease-in 0.5s; }
