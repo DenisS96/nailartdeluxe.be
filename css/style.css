@@ -552,11 +552,11 @@ form {
   padding-right: 2rem;
   box-shadow: 0 1.5rem 1.5rem rgba(163, 36, 205, 0.3);
   border-radius: 3rem;
-  background-image: linear-gradient(to right, rgba(243, 128, 220, 0.25), rgba(243, 128, 220, 0.9)), url(../img/gelnails.jpg);
+  background-image: linear-gradient(to right, rgba(250, 221, 240, 0.508), rgba(250, 221, 240, 0.94)), url(../img/gelnails.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: white;
+  color: #363333;
   margin: 2rem;
   z-index: 1;
   transition: all ease-in 1.5s; }
