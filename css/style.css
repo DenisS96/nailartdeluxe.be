@@ -602,6 +602,16 @@ form {
       .voorstellen__text {
         padding-left: 5%;
         padding-right: 5%; } }
+  .voorstellen__img {
+    margin-left: 42%;
+    width: 15rem;
+    height: 18rem;
+    border-radius: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .voorstellen__img {
+        margin-left: 30%;
+        width: 10rem;
+        height: 13rem; } }
 
 .pictures {
   text-align: center; }
