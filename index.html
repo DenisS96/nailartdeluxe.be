@@ -36,7 +36,6 @@
           <h1 class="menu">Menu</h1>
           <h3>Created by Tatjana</h3>
           <ul class="toggle__menu">
-            <li class="toggle__menu--item"><a href="#">Over Mij</a></li>
             <li class="toggle__menu--item"><a href="html/gallery.html">Galerij</a></li>
             <li  class="toggle__menu--item" ><a href="#prijslijst">Prijslijst</a></li>
             <li class="toggle__menu--item"><a href="#afspraak">Afspraak maken</a></li>
@@ -63,52 +62,23 @@
      
    
 
-      <!--voorstelling-->
- <!--     <div class="voorstellen">
-        <h1 class="voorstellen__welkom">Welkom bij nail art Deluxe</h1>
-       
-        <p class="voorstellen__text">
-          Hier kan je terecht voor  het plaatsen van gelnagels en een verzorgde manicure. Zowel op de handen en voeten.
+     
+<div class="voorstellen">
+  <h1 class="welkom">Welkom bij nail art Deluxe</h1>
+
+  <div class="voorstellen__blok">
+ <p class="voorstellen__blok--text">   Hier kan je terecht voor  het plaatsen van gelnagels en een verzorgde manicure. Zowel op de handen en voeten.
 Bij Nail-art Deluxe vinden we dat verzorgde nagels en manicure een recht is voor iedereen, daarom bieden wij onze diensten aan aan een zeer schappelijke prijs.
-
-
-</p>
-
-<p class="voorstellen__text voorstellen__text--2">
+<br><br>
 Bij Nail-art Deluxe kan je steeds terecht voor een leuk praatje en een luisterd oor. Tatjana zorgt er voor dat jij je ontspannen voelt en tevreden naar huis gaat. 
 Klantvriendelijkheid,kwaliteit, en huiselijkheid daar streven we naar. Wij houden rekening met uw wensen en verlangen. <br><br>
 
 Tot binnenkort <br>
-Groetjes Tatjana </p>-->
-<section class="voorstellen">
-  <h1 class="voorstellen__welkom">Welkom bij nail art Deluxe</h1>
-<div class="story">
-  
-<figure class="story__shape">
-  <img
-    src="img/tatjana.jpeg"
-    alt="Tatjana"
-    class="story__img"
-  />
-  <figcaption class="story__caption">Tatjana</figcaption>
-</figure>
+Groetjes Tatjana </p>
+<img src="img/tatjana.jpeg" alt="Tatjana Nail-art Deluxe" class="voorstellen__img"></div>
 
-<div class="story__text">
 
-  <p>
-    Hier kan je terecht voor  het plaatsen van gelnagels en een verzorgde manicure. Zowel op de handen en voeten.
-    Bij Nail-art Deluxe vinden we dat verzorgde nagels en manicure een recht is voor iedereen, daarom bieden wij onze diensten aan aan een zeer schappelijke prijs. 
-   
-Bij Nail-art Deluxe kan je steeds terecht voor een leuk praatje en een luisterd oor. Tatjana zorgt er voor dat jij je ontspannen voelt en tevreden naar huis gaat. 
-Klantvriendelijkheid,kwaliteit, en huiselijkheid daar streven we naar. <br> Wij houden rekening met uw wensen en verlangen. <br><br>
-
-Tot binnenkort <br>
-Groetjes Tatjana
-  </p>
 </div>
-</div>
-      </div>
-    </section>
 
       <!--einde voorstelling-->
       <div class="lijn"></div>
@@ -171,17 +141,23 @@ Groetjes Tatjana
           <p>Maak hier makkelijk een afspraak</p>
     
         </div>
-        <form id="afspraak" action="index.html" method="post">
+        <form id="afspraak" action="https://submit-form.com/MjeTt6w8" method="post">
+          <input
+    type="hidden"
+    name="_feedback.success.title"
+    value="Afspraak met succes gemaakt!"
+  />
+  <input type="hidden" name="_feedback.dark" value="true" />
           <fieldset>
             <legend><span class="number">1</span>Uw gegevens</legend>
             <label for="name">Naam*:</label>
-            <input type="text" id="name" name="user_name" placeholder="Volledige naam">
+            <input type="text" id="name" name="Naam" placeholder="Volledige naam" >
     
             <label for="mail">Email*:</label>
-            <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
+            <input type="email" id="mail" name="email" placeholder="abc@xyz.com" required>
     
             <label for="tel">Gsm/telefoonnummer:</label>
-            <input type="tel" id="tel" placeholder="+32" name="user_num">
+            <input type="tel" id="tel" placeholder="+32" name="nummer" required>
     
           
     
@@ -189,23 +165,22 @@ Groetjes Tatjana
           <fieldset>
             <legend><span class="number">2</span>Afspraak gegevens</legend>
             <label for="appointment_for">Afspraak voor?*:</label>
-            <select id="appointment_for" name="appointment_for" required>
-              <option value="nieuweset">Nieuwe set gelnagels zonder verlenging</option>
-              <option value="meeting">Nieuwe set gelnagels met verlenging</option>
-              <option value="Business">Babyboom</option>
-              <option value="lunch">Bijwerking</option>
-              <option value="skype">Nail art per nagel</option>
-              <option value="movie">Gelnagels verwijderen</option>
-              <option value="couple_date">gewoon lakken</option>
+            <select id="appointment_for" name="afspraak_voor" required>
+              <option value="Nieuwe set Z/verlenging">Nieuwe set gelnagels zonder verlenging</option>
+              <option value="Nieuwe set M/verlenging">Nieuwe set gelnagels met verlenging</option>
+              <option value="Babyboom">Babyboom</option>
+              <option value="Bijwerking">Bijwerking</option>
+              <option value="Gelnagels verwijderen">Gelnagels verwijderen</option>
+              <option value="Gewoon lakken">gewoon lakken</option>
               <option value="Manicure">Manicure</option>
             </select>
             <label for="appointment_description">Wat kunnen we voor u betekenen?:</label>
-            <textarea id="appointment_description" name="appointment_description" placeholder="Extra info"></textarea>
+            <textarea id="appointment_description" name="afspraak_reden" placeholder="*Geef ook aan als je Nail-art wilt"></textarea>
             <label for="date">Datum*:</label>
-            <input type="date" name="date" value="" required></input>
+            <input type="date" name="Datum" value="" required></input>
             <br>
             <label for="time">Tijdstip*:</label>
-            <input type="time" name="time" value="" required></input>
+            <input type="time" name="Tijdstip" value="" required></input>
             <br>
             
           <button type="submit">Afspraak maken</button>
@@ -250,7 +225,7 @@ Groetjes Tatjana
 
   <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </html>
  <!--  <form>
             <h1>Boek hier vandaag jou afspraak :</h1>
