@@ -19,3 +19,34 @@ var myScrollFunc = function () {
 };
 
 window.addEventListener("scroll", myScrollFunc);
+
+var wa_btnSetting = {
+  btnColor: "#6b16c0",
+  ctaText: "WhatsApp mij",
+  cornerRadius: 40,
+  marginBottom: 20,
+  marginLeft: 20,
+  marginRight: 20,
+  btnPosition: "right",
+  whatsAppNumber: "0477595627",
+  welcomeMessage: "Hoe kan ik je helpen?",
+  zIndex: 999999,
+  btnColorScheme: "light",
+};
+window.onload = () => {
+  _waEmbed(wa_btnSetting);
+};
+
+var wa_btnSetting = {
+  btnColor: "#6b16c0",
+  ctaText: "WhatsApp mij",
+  cornerRadius: 40,
+  marginBottom: 20,
+  marginLeft: 20,
+  marginRight: 20,
+  btnPosition: "right",
+  whatsAppNumber: "0477595627",
+  welcomeMessage: "Hello",
+  zIndex: 999999,
+  btnColorScheme: "light",
+};

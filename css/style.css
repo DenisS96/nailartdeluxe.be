@@ -283,173 +283,6 @@ h4 {
   transform: rotate(20deg);
   animation: animateHeart 1.2s infinite; }
 
-/*p span {
-  color: #f00;
-  font-size: 2rem;
-}
-
-p {
-  margin: 0px;
-  font-weight: 500;
-  line-height: 2;
-  color: rgb(255, 255, 255);
-}
-
-form h1 {
-  font-size: 18px;
-  background: #924e99c4 none repeat scroll 0% 0%;
-  color: rgb(255, 255, 255);
-  padding: 22px 25px;
-  border-radius: 5px 5px 0px 0px;
-  margin: auto;
-  text-shadow: none;
-  text-align: left;
-}
-
-form {
-  border-radius: 5px;
-  box-shadow: 0 1.5rem 1.5rem rgba(163, 36, 205, 0.3);
-  max-width: 700px;
-  width: 100%;
-  margin: 5% auto;
-  background-image: linear-gradient(
-      to right top,
-      rgba(243, 128, 220, 0.25),
-      rgba(243, 128, 220, 0.2)
-    ),
-    url(../img/nagels.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-p span {
-  color: #f00;
-  font-size: 2rem;
-}
-
-p {
-  margin: 0px;
-  font-weight: 500;
-  line-height: 2;
-  color: rgb(255, 255, 255);
-}
-
-h1 {
-  text-align: center;
-
-  margin: 50px 0px 0px 0px;
-}
-
-input {
-  background-color: rgba(255, 255, 255, 0.627);
-  border-radius: 0px 5px 5px 0px;
-  border: 1px solid #eee;
-  margin-bottom: 15px;
-  width: 75%;
-  height: 40px;
-  float: left;
-  padding: 0px 15px;
-}
-
-a {
-  text-decoration: inherit;
-}
-
-textarea {
-  background-color: rgba(255, 255, 255, 0.627);
-  border-radius: 0px 5px 5px 0px;
-  border: 1px solid #eee;
-  margin: 0;
-  width: 75%;
-  height: 130px;
-  float: left;
-  padding: 0px 15px;
-}
-
-.form-group {
-  overflow: hidden;
-  clear: both;
-}
-
-.icon-case {
-  width: 35px;
-  float: left;
-  border-radius: 5px 0px 0px 5px;
-  background: #eeeeee;
-  height: 42px;
-  position: relative;
-  text-align: center;
-  line-height: 40px;
-}
-
-i {
-  color: #555;
-}
-
-.contentform {
-  padding: 40px 30px;
-}
-
-.bouton-contact {
-  background-color: #ad77c0bb;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  border: 0;
-  padding: 17px 25px;
-  border-radius: 0px 0px 5px 5px;
-  cursor: pointer;
-  margin-top: 40px;
-  font-size: 18px;
-  &:hover {
-    background-color: #ad77c0;
-  }
-}
-
-.leftcontact {
-  width: 49.5%;
-  float: left;
-  border-right: 1px dotted #ccc;
-  box-sizing: border-box;
-  padding: 0px 15px 0px 0px;
-}
-
-.rightcontact {
-  width: 49.5%;
-  float: right;
-  box-sizing: border-box;
-  padding: 0px 0px 0px 15px;
-}
-
-.validation {
-  display: none;
-  margin: 0 0 10px;
-  font-weight: 400;
-  font-size: 13px;
-  color: #de5959;
-}
-
-#sendmessage {
-  border: 1px solid #fff;
-  display: none;
-  text-align: center;
-  margin: 10px 0;
-  font-weight: 600;
-  margin-bottom: 30px;
-  background-color: #ebf6e0;
-  color: #5f9025;
-  border: 1px solid #b3dc82;
-  padding: 13px 40px 13px 18px;
-  border-radius: 3px;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
-}
-
-#sendmessage.show,
-.show {
-  display: block;
-}
-*/
 #body_header {
   width: auto;
   margin: 0px auto;
@@ -561,7 +394,7 @@ form {
   background-repeat: no-repeat;
   background-position: center;
   color: #363333;
-  margin: 2rem;
+  margin: 2rem 2rem 2rem 30%;
   z-index: 1;
   transition: all ease-in 1.5s; }
   @media only screen and (max-width: 37.5em) {
@@ -600,7 +433,7 @@ form {
   .voorstellen__blok {
     display: flex;
     background-color: #faddf7;
-    margin: 3rem; }
+    margin: 3rem 30% 3rem 3rem; }
     @media only screen and (max-width: 37.5em) {
       .voorstellen__blok {
         margin: 0;
@@ -612,7 +445,7 @@ form {
         .voorstellen__blok--text {
           padding: 1rem; } }
   .voorstellen__img {
-    width: 10rem;
+    width: 12rem;
     padding: 3rem;
     margin-right: 2rem;
     border-radius: 3px; }
@@ -625,17 +458,17 @@ form {
 
 @keyframes animateHeart {
   0% {
-    transform: rotate(20deg) scale(0.8); }
+    transform: rotate(20deg) scale(1.1); }
   5% {
-    transform: rotate(20deg) scale(0.9); }
+    transform: rotate(20deg) scale(1.2); }
   10% {
-    transform: rotate(20deg) scale(0.8); }
+    transform: rotate(20deg) scale(1.1); }
   15% {
-    transform: rotate(20deg) scale(1); }
+    transform: rotate(20deg) scale(1.3); }
   50% {
-    transform: rotate(20deg) scale(0.8); }
+    transform: rotate(20deg) scale(1.1); }
   100% {
-    transform: rotate(20deg) scale(0.8); } }
+    transform: rotate(20deg) scale(1.1); } }
 
 .adres {
   margin-top: 3rem;
@@ -722,3 +555,10 @@ img.zoom {
 
 .modal-footer {
   display: none; }
+
+.privacy {
+  padding-top: 30%;
+  margin-left: 5rem;
+  margin-right: 5rem; }
+  .privacy__heading {
+    margin-top: 3rem; }
