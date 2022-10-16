@@ -45,7 +45,7 @@ var wa_btnSetting = {
   marginLeft: 20,
   marginRight: 20,
   btnPosition: "right",
-  whatsAppNumber: "0477595627",
+  whatsAppNumber: "+32477595627",
   welcomeMessage: "Hello",
   zIndex: 999999,
   btnColorScheme: "light",
