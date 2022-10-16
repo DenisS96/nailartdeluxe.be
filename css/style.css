@@ -182,6 +182,7 @@ h4 {
           background: #fff; } }
 
 .toggle {
+  z-index: 50;
   display: block;
   position: fixed;
   box-shadow: 0.5rem 1rem 1rem rgba(163, 36, 205, 0.1);
@@ -198,12 +199,15 @@ h4 {
       margin-left: 0;
       width: 100%; } }
   .toggle--active {
+    z-index: 50;
     display: block;
     opacity: 1;
     transition: ease-in 0.5s all;
     transform: translateY(0); }
   .toggle__menu {
-    margin-bottom: 25px; }
+    z-index: 50;
+    margin-bottom: 25px;
+    z-index: 100; }
     .toggle__menu li {
       width: 25%;
       display: block;
@@ -592,75 +596,30 @@ form {
 
 .voorstellen {
   padding-top: 25rem; }
-
-.story {
-  margin-top: 20%;
-  width: 75%;
-  margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(163, 36, 205, 0.3);
-  background-color: rgba(250, 221, 240, 0.508);
-  border-radius: 3px;
-  padding: 6rem;
-  padding-left: 9rem;
-  transform: skewX(-12deg); }
-  @media only screen and (max-width: 56.25em) {
-    .story {
-      width: 95%;
-      padding: 0.5rem;
-      padding-left: 0; } }
-  @media only screen and (max-width: 37.5em) {
-    .story {
-      transform: skewX(0); } }
-  .story__text {
-    transform: skewX(12deg); }
+  .voorstellen__blok {
+    display: flex;
+    background-color: #faddf7;
+    margin: 3rem; }
     @media only screen and (max-width: 37.5em) {
-      .story__text {
-        transform: skewX(0); } }
-  .story__img {
-    height: 100%;
-    width: 95%;
-    margin-left: 4.2rem;
-    transform: translateX(-4rem) scale(1.4);
-    backface-visibility: hidden;
-    transition: all 0.5s; }
-  .story__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    text-align: center;
-    opacity: 0;
-    transition: all 0.5s;
-    backface-visibility: hidden; }
-  .story:hover .story__caption {
-    opacity: 1;
-    transform: translate(-50%, -50%); }
-  .story:hover .story__img {
-    transform: translateX(-4rem) scale(1);
-    filter: blur(3px) brightness(80%); }
-  .story__shape {
+      .voorstellen__blok {
+        margin: 0;
+        display: flex;
+        flex-direction: column; } }
+    .voorstellen__blok--text {
+      padding: 3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .voorstellen__blok--text {
+          padding: 1rem; } }
+  .voorstellen__img {
     width: 10rem;
-    height: 10rem;
-    float: left;
-    transform: translateX(-3rem) skewX(12deg);
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%; }
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-      .story__shape {
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-        border-radius: none; } }
+    padding: 3rem;
+    margin-right: 2rem;
+    border-radius: 3px; }
     @media only screen and (max-width: 37.5em) {
-      .story__shape {
-        transform: translateX(-3rem) skewX(0);
-        margin-left: 2rem;
-        shape-outside: circle(45% at 45% 45%); } }
+      .voorstellen__img {
+        padding-top: 0;
+        margin-right: 0;
+        margin-left: 20%; } }
 
 @keyframes animateHeart {
   0% {
@@ -732,6 +691,10 @@ form {
 
 .page-top {
   padding-top: 30%; }
+  @media only screen and (max-width: 37.5em) {
+    .page-top {
+      padding-top: 80%;
+      width: 90%; } }
 
 img.zoom {
   width: 100%;
