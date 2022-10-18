@@ -484,6 +484,9 @@ form {
   top: -50px;
   width: 100%;
   text-align: right; }
+  @media only screen and (max-width: 37.5em) {
+    #leaves {
+      top: -60px; } }
 
 #leaves i {
   display: inline-block;
@@ -627,7 +630,7 @@ form {
   background: linear-gradient(to bottom right, #994a00, #7b390a); }
 
 #leaves i:nth-of-type(2n + 2) {
-  background: linear-gradient(to bottom right, #994a00, #71360b); }
+  background: linear-gradient(to bottom right, #c36915, #71360b); }
 
 #leaves i:nth-of-type(4n + 1) {
   background: linear-gradient(to bottom right, #990, #564500); }
