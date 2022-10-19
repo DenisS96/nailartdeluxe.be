@@ -50,3 +50,24 @@ var wa_btnSetting = {
   zIndex: 999999,
   btnColorScheme: "light",
 };
+
+$(function () {
+  var selectedDates = [];
+  datePicker = $("[id*=txtdate]").datepicker({
+    startDate: new Date(),
+    minDate: 0,
+    multidate: true,
+    format: "mm/dd/yyyy",
+    daysOfWeekHighlighted: "5,6",
+    language: "en",
+  });
+  datePicker.on("changeDate", function (e) {
+    if (e.dates.length <= 3) {
+      selectedDates = e.dates;
+      document.getElementById("<%=Button1.ClientID %>").click();
+    } else {
+      datePicker.data("datepicker").setDates(selectedDates);
+      alert("You can only select 3 dates.");
+    }
+  });
+});
