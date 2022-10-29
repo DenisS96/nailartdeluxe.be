@@ -1,4 +1,4 @@
-$(".navicon").on("click", function (e) {
+/*$(".navicon").on("click", function (e) {
   e.preventDefault();
   $(this).toggleClass("navicon--active");
   $(".toggle").toggleClass("toggle--active");
@@ -11,13 +11,13 @@ myID = document.getElementById("myID");
 
 var myScrollFunc = function () {
   var y = window.scrollY;
-  if (y >= 600) {
+  if (y >= 800) {
     myID.className = "prijslijst show";
   } else {
     myID.className = "prijslijst hide";
   }
 };
-
+*/
 window.addEventListener("scroll", myScrollFunc);
 
 var wa_btnSetting = {
@@ -50,24 +50,3 @@ var wa_btnSetting = {
   zIndex: 999999,
   btnColorScheme: "light",
 };
-
-$(function () {
-  var selectedDates = [];
-  datePicker = $("[id*=txtdate]").datepicker({
-    startDate: new Date(),
-    minDate: 0,
-    multidate: true,
-    format: "mm/dd/yyyy",
-    daysOfWeekHighlighted: "5,6",
-    language: "en",
-  });
-  datePicker.on("changeDate", function (e) {
-    if (e.dates.length <= 3) {
-      selectedDates = e.dates;
-      document.getElementById("<%=Button1.ClientID %>").click();
-    } else {
-      datePicker.data("datepicker").setDates(selectedDates);
-      alert("You can only select 3 dates.");
-    }
-  });
-});

@@ -298,7 +298,7 @@ h4 {
   text-align: center;
   font-size: 25px; }
 
-form {
+.afspraak {
   max-width: 100%;
   margin: 10px auto;
   padding: 10px 20px;
@@ -309,6 +309,19 @@ form {
   border-radius: 8px;
   box-shadow: 1.2rem 1.5rem 1.5rem rgba(163, 36, 205, 0.3); }
 
+#afspraak {
+  margin-top: 4rem; }
+
+.timify-button {
+  cursor: pointer;
+  margin: 2rem;
+  text-align: center;
+  color: #8040f0;
+  transition: all 0.5s; }
+  .timify-button:hover {
+    font-size: 1.1rem; }
+
+/*
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -333,15 +346,18 @@ select {
   color: black;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   margin-bottom: 30px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 input[type="checkbox"] {
-  margin: 0 4px 8px 0; }
+  margin: 0 4px 8px 0;
+}
 
 select {
   padding: 6px;
   height: 32px;
-  border-radius: 2px; }
+  border-radius: 2px;
+}
 
 button {
   padding: 19px 39px 18px 39px;
@@ -358,25 +374,32 @@ button {
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-bottom: 10px;
   cursor: pointer;
-  transition: all 0.3s; }
-  button:hover {
-    background-color: #b14da2; }
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #b14da2;
+  }
+}
 
 fieldset {
   margin-bottom: 30px;
-  border: none; }
+  border: none;
+}
 
 legend {
   font-size: 1.4em;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 label {
   display: block;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+}
 
 label.light {
   font-weight: 300;
-  display: inline; }
+  display: inline;
+}
 
 .number {
   background-color: #9f5fcf;
@@ -389,11 +412,13 @@ label.light {
   line-height: 30px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  border-radius: 100%; }
+  border-radius: 100%;
+}
 
 form {
-  max-width: 500px; }
-
+  max-width: 500px;
+}
+*/
 .prijslijst {
   padding-right: 2rem;
   box-shadow: 0 1.5rem 1.5rem rgba(163, 36, 205, 0.3);
